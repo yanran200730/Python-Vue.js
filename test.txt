@@ -1,0 +1,1250 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>热点--ZAKER新闻：传递价值资讯</title>
+
+  <meta name="keywords" content="ZAKER,ZAKER新闻,扎客,扎客新闻,资讯,热点新闻">
+
+  <meta name="description" content="ZAKER 聚合了新闻、杂志、报纸、公众号等各类头条资讯，热点频道就头条,科技,娱乐,体育,国内,国际,军事,财经,互联网,教育,时尚,社会,亲子,情爱,旅游,科学,星座,奢侈品,游戏,美食,电影,健康,理财等多个话题，提供今日最热门新闻，通过大数据算法提供个性化、社会化新闻服务。">
+  <link rel="dns-prefetch" href="http://zkres.myzaker.com">
+
+  <link rel="dns-prefetch" href="http://zkres1.myzaker.com">
+
+  <link rel="dns-prefetch" href="http://zkres2.myzaker.com">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="renderer" content="webkit">
+
+  <meta name="apple-touch-fullscreen" content="yes">
+
+  <meta name="full-screen" content="true">
+
+  <meta name="x5-fullscreen" content="true">
+
+  <meta name="360-fullscreen" content="true">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+  <meta name="applicable-device"content="pc,mobile">
+
+  <link rel="stylesheet"  type="text/css" href="http://zkres.myzaker.com/static/zaker_web2/css/index.min.css" />
+  <link rel="stylesheet"  type="text/css" href="http://zkres.myzaker.com/static/zaker_web2/css/normalize.min.css" />
+  <link rel="stylesheet"  type="text/css" href="http://zkres.myzaker.com/static/zaker_web2/css/base.min.css" />
+  <link rel="stylesheet"  type="text/css" href="http://zkres.myzaker.com/static/zaker_web2/css/hotSearch.min.css" />
+
+</head>
+
+<body>
+
+  <div class="logo_container">
+
+    <a class="logo hidden-phone" href="http://www.myzaker.com" title="logo" >
+      <img src="http://zkres.myzaker.com/static/zaker_web2/img/logo.png" />
+    </a>
+
+    <a class="mobile_logo visible-phone" href="http://www.myzaker.com" title="logo" >
+      <img src="http://zkres.myzaker.com/static/zaker_web2/img/ZAKER_logo.png" width="77" height="16" />
+    </a>
+
+    <img class="slogan" src="http://zkres.myzaker.com/static/zaker_web2/img/slogan_new.png" height="12" width="77" alt="">
+
+    <div class="zklink_container hidden-phone">
+
+      <a href="http://www.myzaker.com/product.html" target="_blank">下载客户端</a>
+
+      <a href="http://www.myzaker.com/about.html" target="_blank">关于ZAKER</a>
+
+      <a href="http://www.myzaker.com/contact.html" target="_blank">合作</a>
+
+      <a href="http://www.myzaker.com/job.php" target="_blank">加入</a>
+
+    </div>
+
+  </div>
+
+  <div id="header">
+
+    <div class="main flex-block">
+
+      <div class="nav_outer flex-10">
+
+        <div class="nav">
+
+          <a class="nav_item nav_item_active" data-appid="660" href="http://www.myzaker.com/channel/660" title="热点新闻" >热点</a>
+
+          <a class="nav_item " data-appid="9" href="http://www.myzaker.com/channel/9" title="娱乐新闻" >娱乐</a>
+
+          <a class="nav_item " data-appid="7" href="http://www.myzaker.com/channel/7" title="汽车新闻" >汽车</a>
+
+          <a class="nav_item " data-appid="8" href="http://www.myzaker.com/channel/8" title="体育新闻" >体育</a>
+
+          <a class="nav_item " data-appid="13" href="http://www.myzaker.com/channel/13" title="科技新闻" >科技</a>
+
+          <a class="nav_item " data-appid="1" href="http://www.myzaker.com/channel/1" title="国内新闻" >国内</a>
+
+          <a class="nav_item " data-appid="2" href="http://www.myzaker.com/channel/2" title="国际新闻" >国际</a>
+
+          <a class="nav_item " data-appid="3" href="http://www.myzaker.com/channel/3" title="军事新闻" >军事</a>
+
+          <a class="nav_item " data-appid="4" href="http://www.myzaker.com/channel/4" title="财经新闻" >财经</a>
+
+          <a class="nav_item " data-appid="5" href="http://www.myzaker.com/channel/5" title="互联网新闻" >互联网</a>
+
+          <a class="nav_item " data-appid="11" href="http://www.myzaker.com/channel/11" title="教育新闻" >教育</a>
+
+          <a class="nav_item " data-appid="12" href="http://www.myzaker.com/channel/12" title="时尚新闻" >时尚</a>
+
+        </div>
+
+        <div class="nav_more">更多</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="header_support" style="display: none;">
+
+    <div class="main">
+
+      <div class="nav_menu">
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/14" data-appid="14"  title="社会新闻">社会</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/959" data-appid="959"  title="亲子新闻">亲子</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/981" data-appid="981"  title="旅游新闻">旅游</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/1039" data-appid="1039"  title="科学新闻">科学</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/1014" data-appid="1014"  title="星座新闻">星座</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/1067" data-appid="1067"  title="奢侈品新闻">奢侈品</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/10376" data-appid="10376"  title=" 游戏新闻">游戏</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/10386" data-appid="10386"  title="美食新闻">美食</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/10530" data-appid="10530"  title="电影新闻">电影</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/10802" data-appid="10802"  title="健康新闻">健康</a>
+
+        <a class="nav_menu_item" href="http://www.myzaker.com/channel/11195" data-appid="11195"  title="理财新闻">理财</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="content">
+
+    <div class="main flex-block">
+
+      <div id="section" class="flex-9">
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809896e9490cbbf31000046/" title="山区留守儿童的早餐：咸菜加白饭" target="_blank" >山区留守儿童的早餐：咸菜加白饭</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>侣行记艺</span>
+              <span>3小时前</span>
+              <span>55 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809896e9490cbbf31000046/" title=" 山区留守儿童的早餐：咸菜加白饭" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/580974f7a07aecff19019e02_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/58099f339490cbfa3100003f/" title="八旬老人不慎滑倒  钉耙插进颅骨" target="_blank" >八旬老人不慎滑倒  钉耙插进颅骨</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>现代快报全媒体</span>
+              <span>1小时前</span>
+              <span>6 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/58099f339490cbfa3100003f/" title=" 八旬老人不慎滑倒  钉耙插进颅骨" target="_blank" class="img" style="background-image:url(http://zkres3.myzaker.com/201610/aHR0cDovL3prcmVzLm15emFrZXIuY29tL2ltZ191cGxvYWQvY21zL2FydGljbGVfaW1nLzEwMTY5L3VwXzEwMTY5XzE0NzcwMTk5ODE3MDM5LmpwZw==_1242.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809a3159490cbae31000057/" title="共和党承认大势已去 希拉里获压倒性胜利" target="_blank" >共和党承认大势已去 希拉里获压倒性胜利</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中国日报网</span>
+              <span>1小时前</span>
+              <span>21 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809a3159490cbae31000057/" title=" 共和党承认大势已去 希拉里获压倒性胜利" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5809a323a07aecff1901bfca_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809920a9490cbbf3100004f/" title="刘强东发飙：再提奶茶妹妹别怪我不客气" target="_blank" >刘强东发飙：再提奶茶妹妹别怪我不客气</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>网易娱乐</span>
+              <span>2小时前</span>
+              <span>120 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809920a9490cbbf3100004f/" title=" 刘强东发飙：再提奶茶妹妹别怪我不客气" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58098b88a07aecff1901adff_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809a8729490cbe231000043/" title="黄山市纪委1元网拍罚没名酒遭叫停" target="_blank" >黄山市纪委 1 元网拍罚没名酒遭叫停</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>南都网</span>
+              <span>1小时前</span>
+              <span>2 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809a8729490cbe231000043/" title=" 黄山市纪委 1 元网拍罚没名酒遭叫停" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5809a8779490cb093200003a_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809a21d9490cbea31000064/" title="济南郭店中学劫持事件：经解救人质安全" target="_blank" >济南郭店中学劫持事件：经解救人质安全</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>新华网</span>
+              <span>1小时前</span>
+              <span>317 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809a21d9490cbea31000064/" title=" 济南郭店中学劫持事件：经解救人质安全" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5809a224a07aecff1901bf96_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809a75c9490cbb331000056/" title=" 日本鸟取县 6.6 级地震 多条新干线停运"  target="_blank" >日本鸟取县 6.6 级地震 多条新干线停运</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中新网</span>
+              <span>1小时前</span>
+              <span>152 评论</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580996499490cbb531000048/" title="两任妻子争执 他夺警察配枪朝前妻开枪" target="_blank" >两任妻子争执 他夺警察配枪朝前妻开枪</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>苍梧晚报</span>
+              <span>2小时前</span>
+              <span>31 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580996499490cbb531000048/" title=" 两任妻子争执 他夺警察配枪朝前妻开枪" target="_blank" class="img" style="background-image:url(http://zkres3.myzaker.com/201610/aHR0cDovL3prcmVzLm15emFrZXIuY29tL2ltZ191cGxvYWQvY21zL2FydGljbGVfaW1nLzEwMTY5L3VwXzEwMTY5XzE0NzcwMTY5MjUxMDg0LmpwZw==_1242.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580993f29490cbaf3100004c/" title=" 最高检：暴力伤医案件一律列为重大敏感案件"  target="_blank" >最高检：暴力伤医案件一律列为重大敏感案件</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中新网</span>
+              <span>2小时前</span>
+              <span>222 评论</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580981069490cbbc3100002e/" title="路虎每晚准时消失 次日加满油停回车位" target="_blank" >路虎每晚准时消失 次日加满油停回车位</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>都市快报</span>
+              <span>4小时前</span>
+              <span>60 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580981069490cbbc3100002e/" title=" 路虎每晚准时消失 次日加满油停回车位" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58098112a07aecff1901a603_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580988009490cbd331000043/" title="胎儿23周被取出子宫手术 放回后重生" target="_blank" >胎儿 23 周被取出子宫手术 放回后重生</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>腾讯国际新闻</span>
+              <span>3小时前</span>
+              <span>41 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580988009490cbd331000043/" title=" 胎儿 23 周被取出子宫手术 放回后重生" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58098419a07aecff1901a7e4_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580996499490cbb531000040/" title="母亲带娃电梯里劝男子别吸烟遭暴打" target="_blank" >母亲带娃电梯里劝男子别吸烟遭暴打</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>都市快报</span>
+              <span>1小时前</span>
+              <span>31 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580996499490cbb531000040/" title=" 母亲带娃电梯里劝男子别吸烟遭暴打" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/580991b6a07aecff1901b1d5_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809b0039490cbe03100005e/" title="村干部要五保户请吃饭续：村支书被停职" target="_blank" >村干部要五保户请吃饭续：村支书被停职</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>华西都市报</span>
+              <span>40分钟前</span>
+              <span>3 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809b0039490cbe03100005e/" title=" 村干部要五保户请吃饭续：村支书被停职" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5809b00ba07aecff1901c91e_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/58099f339490cbfa3100003d/" title="华人“炒火”加拿大楼市 政府出大招" target="_blank" >华人“炒火”加拿大楼市 政府出大招</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中国新闻周刊</span>
+              <span>1小时前</span>
+              <span>4 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/58099f339490cbfa3100003d/" title=" 华人“炒火”加拿大楼市 政府出大招" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5808e3c67f52e9171a001097_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580996499490cbb531000044/" title="分析：马桶盖事件各方责任和待解谜团" target="_blank" >分析：马桶盖事件各方责任和待解谜团</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>ZAKER台州</span>
+              <span>2小时前</span>
+              <span>36 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580996499490cbb531000044/" title=" 分析：马桶盖事件各方责任和待解谜团" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58097619a07aecff19019e4f_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580979e89490cbf531000038/" title="乞丐月入7000元 晚上带酒菜而归" target="_blank" >乞丐月入 7000 元 晚上带酒菜而归</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>齐鲁晚报</span>
+              <span>4小时前</span>
+              <span>41 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580979e89490cbf531000038/" title=" 乞丐月入 7000 元 晚上带酒菜而归" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58096f9b1bc8e0a209000053_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580996499490cbb531000041/" title="女记者亲历：信用卡被盗刷自救挽回5万" target="_blank" >女记者亲历：信用卡被盗刷自救挽回 5 万</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中国之声</span>
+              <span>2小时前</span>
+              <span>16 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580996499490cbb531000041/" title=" 女记者亲历：信用卡被盗刷自救挽回 5 万" target="_blank" class="img" style="background-image:url(http://zkres3.myzaker.com/201610/aHR0cDovL3prcmVzLm15emFrZXIuY29tL2ltZ191cGxvYWQvY21zL2FydGljbGVfaW1nLzEwMTg0L3VwXzEwMTg0XzE0NzcwMjE0MjI3MzA0LmpwZw==_1242.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/58097b6b9490cbfe31000030/" title=" 和颐酒店遇袭案：男子因介绍卖淫罪被诉"  target="_blank" >和颐酒店遇袭案：男子因介绍卖淫罪被诉</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中新网</span>
+              <span>4小时前</span>
+              <span>59 评论</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580981849490cb0832000038/" title="陆客减少 台湾一导游收入大减烧炭自杀" target="_blank" >陆客减少 台湾一导游收入大减烧炭自杀</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中新网</span>
+              <span>3小时前</span>
+              <span>59 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580981849490cb0832000038/" title=" 陆客减少 台湾一导游收入大减烧炭自杀" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/580977f21bc8e0dc0b000001_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580996499490cbb531000049/" title="楼市热降温 新政后半个月15城房价下跌" target="_blank" >楼市热降温 新政后半个月 15 城房价下跌</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>国家统计局</span>
+              <span>2小时前</span>
+              <span>6 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580996499490cbb531000049/" title=" 楼市热降温 新政后半个月 15 城房价下跌" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58097f4fa07aecff1901a54f_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809b7219490cbaa31000058/" title="这些70岁老人的工作，让你望尘莫及！" target="_blank" >这些 70 岁老人的工作，让你望尘莫及！</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>新闻天天</span>
+              <span>9分钟前</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809b7219490cbaa31000058/" title=" 这些 70 岁老人的工作，让你望尘莫及！" target="_blank" class="img" style="background-image:url(http://zkres3.myzaker.com/201610/aHR0cDovL3prcmVzLm15emFrZXIuY29tL2ltZ191cGxvYWQvY21zL2FydGljbGVfaW1nLzEyNTE1L3VwXzEyNTE1XzE0NzcwMjk0NjM1MC5qcGc=_1242.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/58097ecb9490cbfd3100003a/" title="台风海马袭港 老伯水中淡定看报" target="_blank" >台风海马袭港 老伯水中淡定看报</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中青网</span>
+              <span>4小时前</span>
+              <span>6 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/58097ecb9490cbfd3100003a/" title=" 台风海马袭港 老伯水中淡定看报" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58097ed2a07aecff1901a4f6_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809b4219490cbfd31000060/" title="全国优秀县委书记王积俊被逮捕" target="_blank" >全国优秀县委书记王积俊被逮捕</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>中国经济网</span>
+              <span>22分钟前</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809b4219490cbfd31000060/" title=" 全国优秀县委书记王积俊被逮捕" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58098d621bc8e0c30f000003_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580995b19490cbc431000045/" title="西沙梦幻孔雀蓝 空姐海边秀倩影" target="_blank" >西沙梦幻孔雀蓝 空姐海边秀倩影</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>腾讯图片</span>
+              <span>2小时前</span>
+              <span>1 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580995b19490cbc431000045/" title=" 西沙梦幻孔雀蓝 空姐海边秀倩影" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5809748ea07aecff19019db8_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/5809b0c69490cbed31000047/" title="广州快递小哥再立功 举报邮包藏毒获奖" target="_blank" >广州快递小哥再立功 举报邮包藏毒获奖</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>南都网</span>
+              <span>37分钟前</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/5809b0c69490cbed31000047/" title=" 广州快递小哥再立功 举报邮包藏毒获奖" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/5809b0caa07aecff1901caae_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580983fc9490cbed3100002f/" title="老太踏上寻爱之旅 一次又一次谁布下陷阱" target="_blank" >老太踏上寻爱之旅 一次又一次谁布下陷阱</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>重庆晚报</span>
+              <span>3小时前</span>
+              <span>15 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580983fc9490cbed3100002f/" title=" 老太踏上寻爱之旅 一次又一次谁布下陷阱" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58097b0a7f52e946480000d7_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580986e69490cbfa3100002c/" title="水客裤裆藏133颗钻石在深圳闯关" target="_blank" >水客裤裆藏 133 颗钻石在深圳闯关</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>腾讯图片</span>
+              <span>3小时前</span>
+              <span>5 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580986e69490cbfa3100002c/" title=" 水客裤裆藏 133 颗钻石在深圳闯关" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/580986eb77a324af0a00000a_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/580979e09490cb9a3100001f/" title="押钞官兵生活：睡在钱堆里是什么体验" target="_blank" >押钞官兵生活：睡在钱堆里是什么体验</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>腾讯图片</span>
+              <span>4小时前</span>
+              <span>34 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/580979e09490cb9a3100001f/" title=" 押钞官兵生活：睡在钱堆里是什么体验" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58097746a07aecff19019f90_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure flex-block">
+
+          <div class="article flex-1">
+
+            <h2 class="figcaption">
+              <a href="http://www.myzaker.com/article/58097d9b9490cb013200003f/" title="景海鹏、陈冬在太空出现抑郁了咋办？" target="_blank" >景海鹏、陈冬在太空出现抑郁了咋办？</a>
+            </h2>
+
+            <div class="subtitle">
+              <span>新华网</span>
+              <span>4小时前</span>
+              <span>12 评论</span>
+            </div>
+
+          </div>
+
+          <a href="http://www.myzaker.com/article/58097d9b9490cb013200003f/" title=" 景海鹏、陈冬在太空出现抑郁了咋办？" target="_blank" class="img" style="background-image:url(http://zkres.myzaker.com/201610/58096bb41bc8e05109000045_320.jpg);"></a>
+
+        </div>
+
+        <div class="figure_loading">正在为你加载更多...</div>
+
+      </div>
+
+      <a class="next_page" style="display: none" href="http://www.myzaker.com/news/home_new.php?f=zakercn&url=http%3A%2F%2Fiphone.myzaker.com%2Fzaker%2Fblog2news.php%3Fapp_id%3D660%26since_date%3D1476962163%26nt%3D1%26next_aticle_id%3D580967789490cbac31000033%26_appid%3Diphone%26opage%3D2%26otimestamp%3D177%26_version%3D6.5&_version=6.5" ></a>
+
+      <div id="aside" class="visible-desktop">
+
+        <!--搜索框-->
+
+        <div class="search_container ">
+
+          <input class="search hidden-phone" type="text" placeholder="搜索资讯" />
+
+          <div class="search_icon"></div>
+
+          <div class="search_btn">搜索</div>
+
+          <div class="search_assist_list"></div>
+
+        </div>
+
+        <div class="channel">
+
+          <h3 class="channel_title">24小时热榜</h3>
+
+          <div class="channel_list">
+
+            <ul class="channel_list_show">
+
+              <li>
+                <a href="http://www.myzaker.com/article/580983fc9490cbed3100002f/" title="老太踏上寻爱之旅 一次又一次谁布下陷阱"  target="_blank">老太踏上寻爱之旅 一次又一次谁布下陷阱</a>
+                <div class="channel_subtitle">
+                  <span>头条新闻</span>
+                  <span>3小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58077ec19490cbef4c000010/" title="谷歌送wifi，可印度人都用来看色情"  target="_blank">谷歌送wifi，可印度人都用来看色情</a>
+                <div class="channel_subtitle">
+                  <span>科学频道</span>
+                  <span>昨天</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58098d109490cb0432000053/" title="沪指跳水跌0.36% 环保股领跌"  target="_blank">沪指跳水跌0.36% 环保股领跌</a>
+                <div class="channel_subtitle">
+                  <span>财经新闻</span>
+                  <span>3小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58095bf07f52e9a57c000005/" title="自称乔任梁女友者称见过家长 否认炒作"  target="_blank">自称乔任梁女友者称见过家长 否认炒作</a>
+                <div class="channel_subtitle">
+                  <span>娱乐八卦</span>
+                  <span>6小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58097973a07aeced04000342/" title="蔡少芬生病炫夫 张晋赤裸上身伺候"  target="_blank">蔡少芬生病炫夫 张晋赤裸上身伺候</a>
+                <div class="channel_subtitle">
+                  <span>娱乐八卦</span>
+                  <span>4小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5808af709490cb4f2300000f/" title="小米5s Plus图赏：小米新的野望"  target="_blank">小米5s Plus图赏：小米新的野望</a>
+                <div class="channel_subtitle">
+                  <span>数码测评</span>
+                  <span>18小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5808402e1bc8e0d75b000005/" title="大牌好贵跟着她们穿平价款就够了"  target="_blank">大牌好贵跟着她们穿平价款就够了</a>
+                <div class="channel_subtitle">
+                  <span>时尚频道</span>
+                  <span>昨天</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/580996499490cbb531000041/" title="女记者亲历：信用卡被盗刷自救挽回5万"  target="_blank">女记者亲历：信用卡被盗刷自救挽回5万</a>
+                <div class="channel_subtitle">
+                  <span>头条新闻</span>
+                  <span>2小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/580966409490cbf605000015/" title="苹果MBP的触控条叫Magic Toolbar"  target="_blank">苹果MBP的触控条叫Magic Toolbar</a>
+                <div class="channel_subtitle">
+                  <span>科技频道</span>
+                  <span>5小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/580955a09490cb0b32000015/" title="他强奸女儿16岁玩伴 6次致怀孕"  target="_blank">他强奸女儿16岁玩伴 6次致怀孕</a>
+                <div class="channel_subtitle">
+                  <span>社会新闻</span>
+                  <span>7小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5808aec31bc8e0d16e000002/" title="为什么外国人的鼻子那么高？"  target="_blank">为什么外国人的鼻子那么高？</a>
+                <div class="channel_subtitle">
+                  <span>科学频道</span>
+                  <span>18小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58096d989490cb043200002f/" title="泪崩！范佩西破门不庆祝 老爵爷鼓掌"  target="_blank">泪崩！范佩西破门不庆祝 老爵爷鼓掌</a>
+                <div class="channel_subtitle">
+                  <span>体育频道</span>
+                  <span>5小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/580704e39490cbaa7f00001d/" title="50%的司机内外循环傻傻分不清楚！这个功能用不好 上路容易难受死"  target="_blank">50%的司机内外循环傻傻分不清楚！这个功能用不好 上路容易难受死</a>
+                <div class="channel_subtitle">
+                  <span>汽车频道</span>
+                  <span>前天</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58096b781bc8e0b309000001/" title="男子开车低头找衣服撞死行人 弃车逃逸后自首"  target="_blank">男子开车低头找衣服撞死行人 弃车逃逸后自首</a>
+                <div class="channel_subtitle">
+                  <span>社会新闻</span>
+                  <span>5小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58097e307f52e9c2650001e1/" title="中将：我在福州架起远火 能砸烂台北"  target="_blank">中将：我在福州架起远火 能砸烂台北</a>
+                <div class="channel_subtitle">
+                  <span>军事频道</span>
+                  <span>4小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5808d33b9490cb3a6900008a/" title="乔丹-克劳福德新赛季初将在发展联盟打球"  target="_blank">乔丹-克劳福德新赛季初将在发展联盟打球</a>
+                <div class="channel_subtitle">
+                  <span>NBA</span>
+                  <span>16小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58097a4b9490cba431000040/" title="台媒：大陆祭出12字方针 应对蔡英文"  target="_blank">台媒：大陆祭出12字方针 应对蔡英文</a>
+                <div class="channel_subtitle">
+                  <span>军事频道</span>
+                  <span>4小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5808f5bc9490cb0c77000000/" title="整瓶白酒下肚　杨丞琳新片激吻後断片"  target="_blank">整瓶白酒下肚　杨丞琳新片激吻後断片</a>
+                <div class="channel_subtitle">
+                  <span>娱乐八卦</span>
+                  <span>13小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/580966409490cbf60500001c/" title="工信部：以后去营业厅办理开卡需要留照片"  target="_blank">工信部：以后去营业厅办理开卡需要留照片</a>
+                <div class="channel_subtitle">
+                  <span>科技频道</span>
+                  <span>5小时前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/58086ef87f52e9667a0002bc/" title="关晓彤身材凹凸有致迷人电眼超妩媚"  target="_blank">关晓彤身材凹凸有致迷人电眼超妩媚</a>
+                <div class="channel_subtitle">
+                  <span>娱乐八卦</span>
+                  <span>23小时前</span>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="channel">
+
+          <h3 class="channel_title">最新资讯</h3>
+
+          <div class="channel_list">
+
+            <ul class="channel_list_show">
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b8d81bc8e0a87800005f/" title="法院查封拍卖公司资产 老板竟出钱请员工状告自己"  target="_blank">法院查封拍卖公司资产 老板竟出钱请员工状告自己</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>刚刚</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6051bc8e00e17000005/" title="打工攒下学费被骗 警方提醒三不原则不轻信不透露不转账"  target="_blank">打工攒下学费被骗 警方提醒三不原则不轻信不透露不转账</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>22分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6061bc8e00e17000007/" title="台湾导游无团可带自杀 因燃烧点接近油箱才引起爆炸"  target="_blank">台湾导游无团可带自杀 因燃烧点接近油箱才引起爆炸</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>22分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b73c1bc8e02c17000001/" title="50岁未婚女因肌瘤切除子宫 母亲妹妹也同病相怜"  target="_blank">50岁未婚女因肌瘤切除子宫 母亲妹妹也同病相怜</a>
+                <div class="channel_subtitle">
+                  <span>大楚网</span>
+                  <span>26分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b4201bc8e05f16000002/" title="全球央行抛售美债 美联储加息或搁浅"  target="_blank">全球央行抛售美债 美联储加息或搁浅</a>
+                <div class="channel_subtitle">
+                  <span>中新网</span>
+                  <span>27分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b4c81bc8e02016000019/" title="贾玲恋爱了？ 回应：是合伙人和多年好友"  target="_blank">贾玲恋爱了？ 回应：是合伙人和多年好友</a>
+                <div class="channel_subtitle">
+                  <span>中新网</span>
+                  <span>28分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6121bc8e00e1700003a/" title="济南一中学疑似发生持刀砍人劫持事件 嫌疑人已被控制"  target="_blank">济南一中学疑似发生持刀砍人劫持事件 嫌疑人已被控制</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>29分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6131bc8e00e1700003b/" title="“海马”登陆广东汕尾 华南江南9省有强降雨"  target="_blank">“海马”登陆广东汕尾 华南江南9省有强降雨</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>29分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b4cf1bc8e05f16000020/" title="医生连续工作32小时致吐血不止 抢救6小时脱险"  target="_blank">医生连续工作32小时致吐血不止 抢救6小时脱险</a>
+                <div class="channel_subtitle">
+                  <span>观察者网</span>
+                  <span>30分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6131bc8e00e1700003c/" title="男子见妻素颜离婚 男子竟然毫不犹豫的选择离婚"  target="_blank">男子见妻素颜离婚 男子竟然毫不犹豫的选择离婚</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>30分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6171bc8e00e1700003f/" title="卷福妻子怀二胎 这当爹的速度比神探夏洛特要快"  target="_blank">卷福妻子怀二胎 这当爹的速度比神探夏洛特要快</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>31分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b6191bc8e00e17000041/" title="主刀医生为患者写短诗 21小时手术35天奇迹康复"  target="_blank">主刀医生为患者写短诗 21小时手术35天奇迹康复</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>31分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b61c1bc8e00e17000044/" title="台风“海马”登陆 湖北未来10天将持续阴雨模式"  target="_blank">台风“海马”登陆 湖北未来10天将持续阴雨模式</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>32分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b61c1bc8e00e17000045/" title="黄圣依被曝怀二胎 温哥华做孕检疑杨子陪伴"  target="_blank">黄圣依被曝怀二胎 温哥华做孕检疑杨子陪伴</a>
+                <div class="channel_subtitle">
+                  <span>中青网</span>
+                  <span>32分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b0c69490cbed31000047/" title="广州快递小哥再立功 举报邮包藏毒获奖"  target="_blank">广州快递小哥再立功 举报邮包藏毒获奖</a>
+                <div class="channel_subtitle">
+                  <span>南都网</span>
+                  <span>37分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b0049490cb0532000041/" title="八旬老人不慎滑倒  钉耙插进颅骨"  target="_blank">八旬老人不慎滑倒  钉耙插进颅骨</a>
+                <div class="channel_subtitle">
+                  <span>现代快报全媒体</span>
+                  <span>40分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b4cb1bc8e0201600001b/" title="搭档：王子文拼命练体能 王凯一有动作戏就激动"  target="_blank">搭档：王子文拼命练体能 王凯一有动作戏就激动</a>
+                <div class="channel_subtitle">
+                  <span>中新网</span>
+                  <span>42分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809aec29490cbba31000050/" title="飞机起落架故障 机长用“特技”降落"  target="_blank">飞机起落架故障 机长用“特技”降落</a>
+                <div class="channel_subtitle">
+                  <span>新华15秒</span>
+                  <span>45分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809b2451bc8e02d16000003/" title="吉林省通报10起典型涉毒案件 1案缴获手枪5把"  target="_blank">吉林省通报10起典型涉毒案件 1案缴获手枪5把</a>
+                <div class="channel_subtitle">
+                  <span>中新网</span>
+                  <span>46分钟前</span>
+                </div>
+              </li>
+
+              <li>
+                <a href="http://www.myzaker.com/article/5809afbe1bc8e0661500003a/" title="渔船在三沙永兴岛外触礁半沉 17人获救"  target="_blank">渔船在三沙永兴岛外触礁半沉 17人获救</a>
+                <div class="channel_subtitle">
+                  <span>凤凰新闻</span>
+                  <span>48分钟前</span>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="about_zk">
+          <div class="channel_title">战略合作</div>
+          <span>深圳晚报报业集团-深圳晚报</span>
+          <span>
+            <a href="http://www.cqnews.net/" target="_blank" class="mudio_coop">华龙网</a>
+          </span>
+          <span>湖北日报传媒集团-楚天金报</span>
+          <span>
+            <a href="http://www.gdtv.cn/" target="_blank" class="mudio_coop">广东广播电视台</a>
+          </span>
+          <span>
+            <a href="http://www.jnds.com.cn/" target="_blank" class="mudio_coop">江南都市报</a>
+          </span>
+          <span>
+            <a href="http://www.dahe.cn/" target="_blank" class="mudio_coop">河南日报报业集团</a>
+            -
+            <a href="http://newpaper.dahe.cn/jrxf/html/2016-09/29/node_91.htm" target="_blank" class="mudio_coop">今日消费</a>
+          </span>
+          <span>
+            <a href="http://www.xdkb.net/" target="_blank" class="mudio_coop">现代快报</a>
+          </span>
+          <span>
+            <a href="http://www.nnnews.net/" target="_blank" class="mudio_coop">南宁日报社</a>
+          </span>
+          <span>
+            <a href="http://www.xkb.com.cn" target="_blank" class="mudio_coop">新快报</a>
+          </span>
+          <span>
+            <a href="http://www.hfwb.com.cn" target="_blank" class="mudio_coop">合肥晚报</a>
+          </span>
+        </div>
+        <div class="about_zk">
+          <div class="channel_title">关于ZAKER</div>
+          <div class='about_wrap'>
+            <div class="about_box">
+              <a href="http://www.myzaker.com/about.html" target="_blank">
+                <div class="about_bg zk"></div>
+                <div class="about_title">关于ZAKER</div>
+              </a>
+            </div>
+            <div class="about_box">
+              <a href="http://www.myzaker.com/contact.html" target="_blank">
+                <div class="about_bg coop"></div>
+                <div class="about_title">合作</div>
+              </a>
+            </div>
+            <div class="about_box">
+              <a href="http://www.myzaker.com/job.php" target="_blank">
+                <div class="about_bg join"></div>
+                <div class="about_title">加入</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--                <div class="about_zk">
+        <div class="channel_title">战略合作伙伴</div>
+        <a href="" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/ctjb_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.gdtv.cn/" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/gdgbdst_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/hbrbcmjt_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.hfwb.com.cn" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/hfwb_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.cqnews.net/" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/hlw_logo.png" alt="" class="pa_coop"></a>
+        <a href="http://www.dahe.cn/" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/hnrbbyjt_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.jnds.com.cn/" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/jndsbbt_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://newpaper.dahe.cn/jrxf/html/2016-09/29/node_91.htm" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/jrxf_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.nnnews.net/" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/nlrbs_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/szbyjt_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/szwb_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.xdkb.net/" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/xdkb_logo.jpg" alt="" class="pa_coop"></a>
+        <a href="http://www.xkb.com.cn" target="_blank">
+          <img src="http://zkres.myzaker.com/static/zaker_web2/hezuo/xkb_logo.jpg" alt="" class="pa_coop"></a>
+      </div>
+      -->
+      <div class="aderweima">
+        <img src="http://zkres.myzaker.com/static/zaker_web2/img/erweima.jpg" />
+      </div>
+
+    </div>
+
+  </div>
+
+  <div style="clear:both;"></div>
+
+</div>
+
+<input type="hidden" id="nexturl" value="http://www.myzaker.com/news/next_new.php?f=zakercn&url=http%3A%2F%2Fiphone.myzaker.com%2Fzaker%2Fblog2news.php%3Fapp_id%3D660%26since_date%3D1476962163%26nt%3D1%26next_aticle_id%3D580967789490cbac31000033%26_appid%3Diphone%26opage%3D2%26otimestamp%3D177%26_version%3D6.5&_version=6.5" />
+
+<input type="hidden" id="search_keyword_arr_top5" value='' />
+
+<!--    <input type="hidden" id="search_keyword_arr" value='' />
+-->
+<input type="hidden" id="search_api" value='http://www.myzaker.com/news/search_new.php' />
+
+<div id="footer">
+  Copyright © 2016 ZAKER.All Rights Reserved
+  <br/>
+  <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备12019658号-6</a>
+  互联网出版许可证：
+  <a href="http://www.myzaker.com/images/new/bottom/XKZ3.jpg" target="_blank">新出审字[2013]211号</a>
+
+</div>
+
+<!-- 工具栏专用html -->
+
+<div class="fixed_tool">
+
+  <!-- 首页不需要返回首页的功能 -->
+
+  <img src="http://zkres.myzaker.com/static/zaker_web2/img/refresh.png" title="刷新" onclick="javascript:location=location">
+
+  <!-- 代表滚动到顶部的功能 -->
+
+  <img src="http://zkres.myzaker.com/static/zaker_web2/img/fixedtool_top.png" class="fixed_tool_scrolltop" alt="返回顶部"></div>
+
+<input type="hidden" id="static_url" value="http://zkres.myzaker.com/static/zaker_web2/" />
+
+<input type="hidden" id="channel_id" value="660" />
+
+<input type="hidden" id="baidu_stat" value="http://hm.baidu.com/hm.gif?si=5fb4003fc6deb10b8b89787c65c10337&amp;et=0&amp;nv=1&amp;st=1&amp;v=wap-0-0.2&amp;rnd=9500822035" />
+
+<input type="hidden" id="baidu_push" value="" />
+
+<input type="hidden" id="cnzz_stat" value="http://c.cnzz.com/wapstat.php?siteid=1260215414&r=&rnd=1558366196" />
+
+<input type="hidden" id="so360_stat" value="http://js.passport.qihucdn.com/11.0.1.js?a662776051a7d5888c676bb74d03939a" />
+
+<input type="hidden" id="zaker_stat" value="http://stat.myzaker.com/stat.php?0=app_id%3D660&1=url%3Dhttp%253A%252F%252Fwww.myzaker.com%252Fchannel%252F660&2=_version%3D4.0&3=for%3Dzakercn" />
+
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/tool.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/layout_hack.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/top2.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/index.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/ercode_tips.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/fixed_tool.min.js" type="text/javascript"></script>
+<script src="http://zkres.myzaker.com/static/zaker_web2/js/home_main.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>

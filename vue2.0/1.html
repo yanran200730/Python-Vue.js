@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.0.3/vue.js"></script>
+</head>
+<body>
+    <ul id="app" v-on:click="getName">
+        <li v-for="item in name" >{{ item }}</li>
+    </ul>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el : "#app",
+            data : {
+                name: ["Django","Python","Vue.js"]
+            },
+            methods: {
+                getName: function(event){
+                    alert(event.target.innerHTML)
+                }
+            }
+        });
+        console.log("http://yanran520.cc")
+    </script>
+</body>
+</html>
