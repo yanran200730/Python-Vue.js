@@ -1,4 +1,5 @@
 from django.shortcuts import render
-import requests
 
-from .models import News
+
+def home(request):
+    return render(request,"index.html")

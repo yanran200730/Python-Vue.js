@@ -7,10 +7,22 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 sys.path.append(os.path.dirname(__file__))
 
 from news.models import News
+from news.models import Links
 
 # with open('test.txt','w',encoding='utf-8') as f:
 #     f.write(page.text)
+def getLinksField():
+    LinkList = list()
+    LinkFields = Links.objects.all()
+    if len(LinkFields) < 1:
+        return False
+    for i in LinkFields:
+        LinkList.append(i.links)
+    return LinkList
+
+
 def getPage(navBar):
+    """获取指令分类的新闻页面"""
     items = ["热点","娱乐","体育","科技","互联网","科学","美食","电影","社会","星座"]
     soups = list()
     for navItem in navBar:
@@ -28,20 +40,33 @@ def getPage(navBar):
     return soups      
 
 def getNewsLinks(soups):
+    """获取新闻页面的新闻链接"""
     newsLinks = list()
+    flag = False
     for soup in soups:
         sections = soup.select("#content #section a")
         for links in sections:
             link = links.get("href")
-            if link not in newsLinks:
+            if (flag):
+                LinkList = getLinksField()
+                if link not in newsLinks and link not in LinkList:
+                    newsLinks.append(link)
+                    Links.objects.create(links=link)
+                    print ("新闻链接 ----------222" + link)
+                else:
+                    continue
+            else:
                 newsLinks.append(link)
-                print ("新闻链接 ----------" + link)
+                Links.objects.create(links=link) 
+                flag = True  
+                print ("新闻链接 ----------111" + link)           
                 # break
     print ("新闻链接总数------" + str(len(newsLinks)))
     print (len(soups))
     return newsLinks
 
 def downloadImageFile(imgUrl):
+    """下载图片并已图片名保存"""
     local_filename = imgUrl.split('/')[-1]  
     print ("图片下载中-----", local_filename,imgUrl) 
     r = requests.get(imgUrl, stream=True) 
@@ -54,7 +79,7 @@ def downloadImageFile(imgUrl):
     return local_filename  
 
 def getNewsInfor(newsLinks):
-    # fo = open("text1.txt", "w+")
+    """获取新闻信息,并存入数据库"""
     news = []
     newDict = {}
     imgs = []
@@ -85,7 +110,7 @@ def getNewsInfor(newsLinks):
                 content2 = content1.replace("http://zkres1.myzaker.com","http://127.0.0.1:8000/static")
                 content  = content2.replace("data-original","src")
             newDict["content"] = content
-            News.objects.create(newsItem=newDict["tag"], article=newDict["content"], title=newDict["title"], users=newDict["user"], imgs=newDict["imgs"])
+            News.objects.create(newsItem=newDict["tag"], article=newDict["content"], title=newDict["title"], author=newDict["user"], imgs=newDict["imgs"])
 
 def main(url):
     try:
