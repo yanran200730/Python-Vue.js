@@ -48,6 +48,7 @@
         font-family: "微软雅黑";
         word-spacing: 0.05em;
         -webkit-tap-highlight-color:transparent;
+        overflow: hidden;
     }
 
     a {

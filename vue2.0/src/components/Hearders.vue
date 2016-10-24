@@ -22,15 +22,38 @@
                 <li><a href="javascript:;">电影</a></li>
                 <li><a href="javascript:;">社会</a></li>
                 <li><a href="javascript:;">星座</a></li>
-            </ul>  
+            </ul> 
         </nav>
+<!--         <div class="phone-nav">
+            <ul>
+                <li><a class="active" href="javascript:;">热点</a></li>
+                <li><a href="javascript:;">娱乐</a></li>
+                <li><a href="javascript:;">体育</a></li>
+                <li><a href="javascript:;">科技</a></li>
+                <li><a href="javascript:;">互联网</a></li>  
+            </ul> 
+            <ul>
+                <li><a href="javascript:;">科学</a></li>
+                <li><a href="javascript:;">美食</a></li>
+                <li><a href="javascript:;">电影</a></li>
+                <li><a href="javascript:;">社会</a></li>
+                <li><a href="javascript:;">星座</a></li>
+            </ul>          
+        </div> -->
     </div>
 </template>
-<style scoped>
-    html {
-        /*overflow: hidden;*/
+
+<script>
+    export default {
+        data: function(){
+            return {
+
+            }
+        }
     }
-    
+</script>
+
+<style scoped>
     .logo {
         margin: 0 auto;
         max-width: 1000px;
@@ -55,42 +78,41 @@
     }
 
     .nav {
-        /*max-width: 100%;*/
+        position: relative;
+        overflow: hidden;
         background-color: #F5F5F5;
+        font-size: 16px;
     }
 
     .list {
         max-width: 1000px;
         margin: 0 auto;
-    }
-
-    .nav {
-        font-size: 16px;
-    }
-
-    .nav ul {
         height: 60px;
     }
 
-    .nav ul li  {
+    .phone-nav {
+        display: none;
+    }
+
+    .list li {
         font-family: "微软雅黑";
         float: left;
         line-height: 60px;
         display: inline-block;
     }
 
-    .nav ul li a {
+    .list li a {
         height: 100%;
         display: inline-block;
         padding: 0 25px;
     }
 
-    .nav ul li a:hover {
+    .list li a:hover {
         color: #FB4747;
         background-color: #DEDEDE;
     }
 
-    .nav ul li a:visited {
+    .list li a:visited {
         color: #FB4747;
         background-color: #DEDEDE;        
     }
@@ -110,8 +132,6 @@
         }
 
         .list {
-/*            display: -webkit-flex;
-            display: flex;*/
             height: 50px;
         }
 
@@ -119,11 +139,11 @@
             width: 100%;
         }
 
-        .nav ul li a {
+        .list li a {
             padding: 0!important;
         }
 
-        .nav ul li {
+        .list li {
             width: 10%;
             text-align: center;
             line-height: 50px;
@@ -131,18 +151,45 @@
     }
 
     @media screen and (max-width: 600px){
-        html {
-            overflow: hidden;
-        }
-
         .nav {
-            position: absolute;
-            overflow: hidden;
-            height: 50px;
+            /*width: 200%;*/
+            font-size: 16px;
         }
 
-        .nav ul li {
+        .list {
+            width: 200%;
+        }
+
+        .nav li {
+            width: 10%;
+            text-align: center;
+        }
+
+        .phone-nav {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .phone-nav ul {
+            height: 50px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .phone-nav ul:last-child {
+            transform: translate3d(100%,0,0);
+        }
+
+        .phone-nav ul li {
             width: 20%;
+            float: left;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .phone-nav ul li a:visited {
+            border-bottom: 1px solid red;
         }
     }
 
