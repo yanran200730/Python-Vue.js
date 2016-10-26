@@ -10,8 +10,8 @@
                 <a href="javascript:;">个人Blog</a>
             </div>
         </div>
-        <nav class="nav">
-            <ul class="list">
+        <nav class="nav clearfix">
+            <ul class="list" class="clearfix">
                 <li><a class="active" href="javascript:;">热点</a></li>
                 <li><a href="javascript:;">娱乐</a></li>
                 <li><a href="javascript:;">体育</a></li>

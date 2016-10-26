@@ -3,6 +3,7 @@ import json
 from bs4 import BeautifulSoup
 import os
 import sys
+import re
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 sys.path.append(os.path.dirname(__file__))
 
@@ -36,7 +37,7 @@ def getPage(navBar):
                 print (e)
             else:
                 soups.append(BeautifulSoup(itemRequest.content, "html.parser"))
-                # break
+                break
     return soups      
 
 def getNewsLinks(soups):
@@ -60,23 +61,30 @@ def getNewsLinks(soups):
                 Links.objects.create(links=link) 
                 flag = True  
                 print ("新闻链接 ----------111" + link)           
-                # break
+                break
     print ("新闻链接总数------" + str(len(newsLinks)))
     print (len(soups))
     return newsLinks
 
 def downloadImageFile(imgUrl):
     """下载图片并已图片名保存"""
+    # local_filename = "/".join(imgUrl.split('/')[-2:]) 
     local_filename = imgUrl.split('/')[-1]  
     print ("图片下载中-----", local_filename,imgUrl) 
     r = requests.get(imgUrl, stream=True) 
-    with open("../vue2.0/src/assets/"+local_filename, 'wb') as f:  
+    with open("../vue2.0/static/img/"+local_filename, 'wb') as f:  
         for chunk in r.iter_content(chunk_size=1024):  
             if chunk:  
                 f.write(chunk)  
                 f.flush()  
         f.close()  
     return local_filename  
+
+def getImgUrl(url):
+    imgStr = url.split('/')
+    del imgStr[3]
+    ImgUrl = '/'.join(imgStr)
+    return ImgUrl
 
 def getNewsInfor(newsLinks):
     """获取新闻信息,并存入数据库"""
@@ -92,9 +100,9 @@ def getNewsInfor(newsLinks):
             print (e)
         else:
             newsSoup = BeautifulSoup(newsRequest.content, "html.parser")
-            newDict["tag"] = newsSoup.select("#article ol a")[1].string
-            newDict["title"] = newsSoup.select("#article .article_header > h1")[0].string
-            newDict["user"] = newsSoup.select("#article .auther")[0].string
+            tag = newsSoup.select("#article ol a")[1].string
+            title = newsSoup.select("#article .article_header > h1")[0].string
+            user = newsSoup.select("#article .auther")[0].string
             imgLinks = newsSoup.select(".article_content > #content img")
             for imgLink in imgLinks:
                 if imgLink.get("data-original"):
@@ -103,14 +111,21 @@ def getNewsInfor(newsLinks):
                 else:
                     imgs.append(imgLink.get("src"))
                     downloadImageFile(imgLink.get("src"))                    
-            newDict["imgs"] = imgs
+            img = imgs[0]
             newsContent = str(newsSoup.select("#article #content")[0])
+            if "http://zkres2.myzaker.com" in img or "http://zkres1.myzaker.com" in img:
+                img1 = img.replace("http://zkres1.myzaker.com","/static/img")
+                Img = img1.replace("http://zkres2.myzaker.com","/static/img")
             if "http://zkres2.myzaker.com" in newsContent or "http://zkres1.myzaker.com" in newsContent:
-                content1 = newsContent.replace("http://zkres2.myzaker.com","http://127.0.0.1:8000/static")
-                content2 = content1.replace("http://zkres1.myzaker.com","http://127.0.0.1:8000/static")
-                content  = content2.replace("data-original","src")
-            newDict["content"] = content
-            News.objects.create(newsItem=newDict["tag"], article=newDict["content"], title=newDict["title"], author=newDict["user"], imgs=newDict["imgs"])
+                content1 = newsContent.replace("http://zkres2.myzaker.com","/static/img")
+                content2 = content1.replace("http://zkres1.myzaker.com","/static/img")
+                content3  = content2.replace("data-original","src")
+            r = re.compile("2\d{5}/")
+            content = r.sub("",content3)
+            imgs = Img.split('/')
+            del imgs[3]
+            imgStr = '/'.join(imgs)
+            News.objects.create(newsItem=tag, article=content, title=title, author=user, imgs=imgStr)
 
 def main(url):
     try:

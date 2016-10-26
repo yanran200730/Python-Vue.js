@@ -50,6 +50,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        // test: /\.(png|gif|svg)(\?.*)?$/,
         loader: 'url',
         query: {
           limit: 10000,

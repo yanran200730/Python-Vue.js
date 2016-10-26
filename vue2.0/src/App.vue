@@ -1,16 +1,15 @@
 <template>
     <div class="wrap">
-        <Hearders></Hearders>
-        <router-view></router-view>
+        <Headers></Headers>
+        <router-view class="warp"></router-view>
     </div>
 </template>
 
 <script type="text/babel">
-    import Hearders from 'components/Hearders.vue'
-
+    import Headers from 'components/Headers.vue'
     export default {
         components: {
-            Hearders
+            Headers
         },
         data: function(){
             return {
@@ -25,7 +24,7 @@
         margin: 0;
         padding: 0;
     }
-
+    
     h1,h2,h3,h4,h5,h6 {
         font-size: 0.16rem;
     }
@@ -45,10 +44,10 @@
     body {
         color: #555;
         font-size: 14px;
-        font-family: "微软雅黑";
+        font-family: "Microsoft Yahei";
         word-spacing: 0.05em;
         -webkit-tap-highlight-color:transparent;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     a {
@@ -61,6 +60,4 @@
     ul,ol {
         list-style: none;
     }
-
-
 </style>
