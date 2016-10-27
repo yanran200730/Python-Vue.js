@@ -6,6 +6,7 @@
 </template>
 
 <script type="text/babel">
+    import './assets/font-awesome-4.6.3/css/font-awesome.min.css';
     import Headers from 'components/Headers.vue'
     export default {
         components: {

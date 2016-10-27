@@ -37,7 +37,7 @@ def getPage(navBar):
                 print (e)
             else:
                 soups.append(BeautifulSoup(itemRequest.content, "html.parser"))
-                break
+                # break
     return soups      
 
 def getNewsLinks(soups):
@@ -61,7 +61,7 @@ def getNewsLinks(soups):
                 Links.objects.create(links=link) 
                 flag = True  
                 print ("新闻链接 ----------111" + link)           
-                break
+                # break
     print ("新闻链接总数------" + str(len(newsLinks)))
     print (len(soups))
     return newsLinks
@@ -80,18 +80,12 @@ def downloadImageFile(imgUrl):
         f.close()  
     return local_filename  
 
-def getImgUrl(url):
-    imgStr = url.split('/')
-    del imgStr[3]
-    ImgUrl = '/'.join(imgStr)
-    return ImgUrl
-
 def getNewsInfor(newsLinks):
     """获取新闻信息,并存入数据库"""
     news = []
     newDict = {}
-    imgs = []
     for newsLink in newsLinks:
+        imgs = []
         print (newsLink)
         try:
             newsRequest = requests.get(newsLink)
@@ -110,21 +104,21 @@ def getNewsInfor(newsLinks):
                     downloadImageFile(imgLink.get("data-original"))                   
                 else:
                     imgs.append(imgLink.get("src"))
-                    downloadImageFile(imgLink.get("src"))                    
-            img = imgs[0]
+                    downloadImageFile(imgLink.get("src"))
+            content = ""
+            imgStr = ""
+            if len(imgs)<1:
+                imgStr = "/static/img/me.jpg" 
+            else: 
+                imgStr = "/static/img/" + imgs[0].split("/")[-1]
             newsContent = str(newsSoup.select("#article #content")[0])
-            if "http://zkres2.myzaker.com" in img or "http://zkres1.myzaker.com" in img:
-                img1 = img.replace("http://zkres1.myzaker.com","/static/img")
-                Img = img1.replace("http://zkres2.myzaker.com","/static/img")
             if "http://zkres2.myzaker.com" in newsContent or "http://zkres1.myzaker.com" in newsContent:
-                content1 = newsContent.replace("http://zkres2.myzaker.com","/static/img")
-                content2 = content1.replace("http://zkres1.myzaker.com","/static/img")
-                content3  = content2.replace("data-original","src")
-            r = re.compile("2\d{5}/")
-            content = r.sub("",content3)
-            imgs = Img.split('/')
-            del imgs[3]
-            imgStr = '/'.join(imgs)
+                content1 = newsContent.replace("http://zkres2.myzaker.com","/static/img").replace("http://zkres1.myzaker.com","/static/img").replace("/img_upload/cms/article_img/ckeditor","").replace("/img_upload/cms/ck/img","")
+                content2 = content1.replace("data-original","src")
+                r = re.compile("2\d{5}/")
+                r1 = re.compile("\d+/\d+/\d+/\d+/")
+                content3 = r.sub("",content2)
+                content = r1.sub("",content3)
             News.objects.create(newsItem=tag, article=content, title=title, author=user, imgs=imgStr)
 
 def main(url):

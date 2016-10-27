@@ -16,10 +16,28 @@ class JSONResponse(HttpResponse):
         kwargs['content_type'] = 'application/json'
         super(JSONResponse, self).__init__(content, **kwargs)
 
+def getNewsItem(string):
+    items = {"redian":"热点","yule":"娱乐","tiyu":"体育","keji":"科技","hulianwang":"互联网","kexue":"科学","meishi":"美食","dianying":"电影","shehui":"社会","xingzuo":"星座"}
+    return items[string]
+
 def article_list(request):
-    # article = Article.objects.all()[0:1]
-    news = News.objects.all()[0:10]
-    serializer = ArticleListSerializer(news, many=True)
+    news = News.objects.all()
+    NewsLists = list()
+    if request.GET['item']:
+        newsItem = request.GET['item']
+    else:
+        newsItem = "redian"
+    item = getNewsItem(newsItem)
+    i = 0
+    for new in news:
+        if new.newsItem == item:
+            NewsLists.append(new)
+            i+=1
+            if i > 10:
+                break
+        else:
+            continue
+    serializer = ArticleListSerializer(NewsLists, many=True)
     response = JSONResponse(serializer.data)
     response['Access-Control-Allow-Origin'] = '*' #跨域
     return response
