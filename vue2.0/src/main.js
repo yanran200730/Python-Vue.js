@@ -1,17 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Vuex from 'vuex'
 import VueResource from 'vue-resource'
 import App from './App.vue'
+import store from './vuex/store'
 
 Vue.use(VueRouter)
-Vue.use(Vuex)
+// Vue.use(Vuex)
 Vue.use(VueResource)
-
-const store = new Vuex.Store({
-    
-})
-
 
 const router = new VueRouter({
     mode: 'history',

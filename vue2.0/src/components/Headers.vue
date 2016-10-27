@@ -12,7 +12,7 @@
         </div>
         <nav class="nav">
             <ul class="list">
-                <li><router-link :to="item" class="active">热点</router-link></li>
+                <li><a class="active">热点</a></li>
                 <li><a href="javascript:;">娱乐</a></li>
                 <li><a href="javascript:;">体育</a></li>
                 <li><a href="javascript:;">科技</a></li>

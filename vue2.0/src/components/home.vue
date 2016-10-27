@@ -1,5 +1,6 @@
 <template>
     <div class="wrap-article">
+        <p>{{  }}</p>
         <ul id="content">
             <li class="article" v-for="item in article_list">
                 <div class="article-wrap">
@@ -20,25 +21,29 @@
     export default {
         data: function(){
             return {
-                apiUrl: "http://127.0.0.1:9000/api/article_list",
+                apiUrl: "http://127.0.0.1:8000/api/article_list",
                 article_list: null,
             }
         },
         mounted: function(){
-            this.getData()
+            this.getData();
+            console.log(this.$store.getters.count)
         },
         methods: {
             getData: function(){
                 this.$http.get(this.apiUrl).then(function(response){
                     const data = response.body;
                     this.article_list = data;
+
                 },function(response){
                     console.log('error')
                 });             
             }
         },
         computed: {
-
+            count(){
+                return this.$store
+            }
         }
     }
 </script>
