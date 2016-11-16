@@ -2,11 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import App from './App.vue'
-import store from './vuex/store'
+import store from './vuex/index'
+import VueTap from 'v-tap'
 
 Vue.use(VueRouter)
-// Vue.use(Vuex)
 Vue.use(VueResource)
+Vue.use(VueTap)
 
 const router = new VueRouter({
     mode: 'history',
@@ -14,36 +15,41 @@ const router = new VueRouter({
         {
             path: '/', 
             name: 'home',
-            component: function(resolve) {
-                require(['./components/Home.vue'], resolve)
-            }
+            component: resolve => require(['./components/Home.vue'], resolve)
         },
         {
             path: '/:item',
             name: 'item',
-            component: function(resolve) {
-                require(['./components/Home.vue'], resolve)
-            }
+            component: resolve => require(['./components/Home.vue'], resolve)
         },
-        { 
-            path: '*',
-            redirect: '/home'
+        {
+            path: '/article/:id',
+            name: 'id',
+            component: resolve => require(['./components/Article.vue'], resolve)
         },
-    ]
+        // { 
+        //     path: '/',
+        //     redirect: 'home'
+        // },
+    ],
+    scrollBehavior (to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else {
+            return { x: 0, y: 0 }
+        }
+    }
 }) 
 
-// Vue.filter('imgUrl',function(value){
-//     let str = value.toString(); 
-//     let arr = str.split("/");
-//     let str1 = arr.splice(3,1);
-//     let result = arr.join("/");
-//     return value
-// });
 
 Vue.filter('datetime',function(value) {
     const date = new Date(new Date(value).valueOf());
     let Seconds = date.getSeconds()<10 ? ("0" + date.getSeconds()) : date.getSeconds();
-    return date.getFullYear() + "年" + (date.getMonth()+1) + "月" + date.getDate()+ "日" + " " + date.getHours() + ":" +date.getMinutes() + ":" + Seconds
+    let Minutes = date.getMinutes()<10 ? ("0" + date.getMinutes()) : date.getMinutes();
+    let Hours = date.getHours()<10 ? ("0" + date.getHours()) : date.getHours();
+    let Day = date.getDate()<10 ? ("0" + date.getDate()) : date.getDate();
+    let Month = date.getMonth() + 1 <10 ? ("0" + date.getMonth() + 1) : date.getMonth() + 1;
+    return date.getFullYear() + "年" + Month + "月" + Day + "日" + " " + Hours + ":" + Minutes + ":" + Seconds
 });
 
 const app = new Vue({

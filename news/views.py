@@ -22,37 +22,32 @@ def getNewsItem(string):
 
 def article_list(request):
     news = News.objects.all()
+    index = int()
     NewsLists = list()
     if request.GET['item']:
         newsItem = request.GET['item']
     else:
         newsItem = "redian"
     item = getNewsItem(newsItem)
+    if request.GET['page'] == 0:
+        index = 0
+    else:
+        index = 10 * int(request.GET['page'])
     i = 0
+
     for new in news:
         if new.newsItem == item:
             NewsLists.append(new)
-            i+=1
-            if i > 10:
-                break
         else:
             continue
-    serializer = ArticleListSerializer(NewsLists, many=True)
+    serializer = ArticleListSerializer(NewsLists[index:index+10], many=True)
     response = JSONResponse(serializer.data)
     response['Access-Control-Allow-Origin'] = '*' #跨域
     return response
 
-# def article_list(request):
-#     sessionKey = 'article' + id
-#     if request.session.get(sessionKey, False):
-#         clickNumber = 0
-#     else:
-#         request.session[sessionKey] = 1
-#         clickNumber = 1
-#     article = Article.objects.get(id=str(id))
-#     article.times = article.times + clickNumber
-#     article.save()
-#     serializer = ArticleSerializer(article)
-#     response = JSONResponse(serializer.data)
-#     response['Access-Control-Allow-Origin'] = '*' #跨域
-#     return response
+def article(request, id):
+    article = News.objects.get(id=str(id))
+    serializer = ArticleSerializer(article)
+    response = JSONResponse(serializer.data)
+    response['Access-Control-Allow-Origin'] = '*' #跨域
+    return response

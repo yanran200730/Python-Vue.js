@@ -1,38 +1,87 @@
 <template>
     <div class="header">
         <div class="logo">
-            <a href="javascript">
+            <router-link to="/">
                 <img src="../assets/img/logo.png">
-            </a>
-            <div class="links">
-                <a href="javascript:;">关于ZAKER</a>
-                <a href="javascript:;">GitHub</a>
-                <a href="javascript:;">个人Blog</a>
+            </router-link>
+            <div class="login">
+                <span> <i class="fa fa-user fa-2x"></i>登录</span>
             </div>
         </div>
-        <nav class="nav">
-            <ul class="list">
-                <li><a class="active">热点</a></li>
-                <li><a href="javascript:;">娱乐</a></li>
-                <li><a href="javascript:;">体育</a></li>
-                <li><a href="javascript:;">科技</a></li>
-                <li><a href="javascript:;">互联网</a></li>
-                <li><a href="javascript:;">科学</a></li>
-                <li><a href="javascript:;">美食</a></li>
-                <li><a href="javascript:;">电影</a></li>
-                <li><a href="javascript:;">社会</a></li>
-                <li><a href="javascript:;">星座</a></li>
-            </ul> 
+        <nav class="nav" v-bind:class="[ eventData.scrollTop >= eventData.logoHeight ? 'active' : ''] ">
+            <div class="nav-wrap">
+                <ul class="list" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd"
+                                v-bind:style="{ transform: 'translate3d('+ moveX + 'px,0,0)'}">
+                    <li v-for="(value, key) in navList">
+                        <router-link :to="{ name:'item' , params: { item: key } }">{{ value }}</router-link>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 </template>
 
 <script>
+    import { mapGetters, mapActions } from 'vuex';
+
     export default {
+        props: ['eventData'],
+
         data: function(){
             return {
+                navList: {
+                    "redian": "热点",
+                    "yule": "娱乐",
+                    "tiyu": "体育",
+                    "keji": "科技",
+                    "hulianwang": "互联网",
+                    "kexue": "科学",
+                    "meishi": "美食",
+                    "dianying": "电影",
+                    "shehui": "社会",
+                    "xingzuo": "星座"
+                },
+                slide: {
+                    width: this.eventData.width,
+                    startX: 0,
+                    endX: 0, 
+                    // moveX: this.moveX,
+                },
             }
-        }
+        },
+
+        computed: {
+          ...mapGetters([
+                'moveX',
+            ]),
+        },
+
+        methods: {
+            ...mapActions([
+                'getMoveX',
+            ]),     
+
+            touchStart: function(event){
+                this.startX = event.touches[0].clientX - this.moveX;
+            },
+
+            touchMove: function(event){
+                event.preventDefault();
+                this.getMoveX(event.touches[0].clientX - this.startX);
+            },
+
+            touchEnd: function(event){
+            	let minWidth = -this.eventData.width;
+            	let maxWidth = 0;
+
+            	if (this.moveX < minWidth){
+            		this.getMoveX(- this.eventData.width);
+            	}else if (this.moveX > 0){
+            		this.getMoveX(0);
+            	}
+            },
+
+        },
     }
 </script>
 
@@ -43,78 +92,121 @@
         height: 100px;
         position: relative;
     }
-    .logo > img {
+    
+    .logo  img {
         vertical-align: middle;
+        width: 146px;
+        height: 66px;
     }
-    .logo .links {
+
+    .logo .login {
         position: absolute;
         top: 0;
         right: 0;
         line-height: 100px;
+        cursor: pointer;
     }
-    .links > a {
+
+    .login > span {
         display: inline-block;
-        margin: 0 15px;
+        margin-right: 15px;
     }
+
+    .login i {
+        margin-right: 10px;
+    }
+
+    .nav-wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
     .nav {
         position: relative;
         overflow: hidden;
+        width: 100%;
+        height: 60px;
         background-color: #F5F5F5;
         font-size: 16px;
     }
-    .list {
-        max-width: 1000px;
-        margin: 0 auto;
-        height: 60px;
+
+    .active {
+        position: fixed;
+        top: 0;
+        z-index: 100;
     }
+
+    .list {   
+        position: absolute;
+
+    }
+
     .phone-nav {
         display: none;
     }
+
     .list li {
         font-family: "Microsoft Yahei";
         float: left;
         line-height: 60px;
         display: inline-block;
     }
+
     .list li a {
-        height: 100%;
         display: inline-block;
         padding: 0 25px;
     }
+
     .list li a:hover {
         color: #FB4747;
-        background-color: #DEDEDE;
     }
-    .list li a:visited {
-        color: #FB4747;
-        background-color: #DEDEDE;        
+
+    .router-link-active {
+        color: #FB4747 !important;
     }
-    @media screen and (max-width: 840px){
-        .links {
+
+    @media screen and (max-width: 855px){
+        .login {
             display: none;
         }
+
         .logo {
             height: 40px;
             background-color: #f84d4d;
         }
+
         .logo img {
             height: 40px !important;
         }
+
         .list {
-            height: 50px;
+            height: 100%;
         }
+
         .nav {
             width: 100%;
+            height: 50px;
         }
+
+        .list {
+            width: 100%;
+        } 
+
         .list li a {
             padding: 0!important;
         }
+
         .list li {
             width: 10%;
             text-align: center;
             line-height: 50px;
         }
+
+        .router-link-active {
+            border-bottom: 2px solid #FB4747;
+        }
     }
+
     @media screen and (max-width: 500px){
         .nav {
             width: 100%;
@@ -129,11 +221,6 @@
             width: 10%;
             line-height: 40px!important;
             text-align: center;
-        }
-
-        .active:hover {
-            border-bottom: 2px solid red;
-            /* background-color: white!important; */
         }
     }
 </style>

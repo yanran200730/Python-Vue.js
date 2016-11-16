@@ -53,14 +53,14 @@ def getNewsLinks(soups):
                 if link not in newsLinks and link not in LinkList:
                     newsLinks.append(link)
                     Links.objects.create(links=link)
-                    print ("新闻链接 ----------222" + link)
+                    print ("新闻链接 ----------" + link)
                 else:
                     continue
             else:
                 newsLinks.append(link)
                 Links.objects.create(links=link) 
                 flag = True  
-                print ("新闻链接 ----------111" + link)           
+                print ("新闻链接 ----------" + link)           
                 # break
     print ("新闻链接总数------" + str(len(newsLinks)))
     print (len(soups))
@@ -114,11 +114,15 @@ def getNewsInfor(newsLinks):
             newsContent = str(newsSoup.select("#article #content")[0])
             if "http://zkres2.myzaker.com" in newsContent or "http://zkres1.myzaker.com" in newsContent:
                 content1 = newsContent.replace("http://zkres2.myzaker.com","/static/img").replace("http://zkres1.myzaker.com","/static/img").replace("/img_upload/cms/article_img/ckeditor","").replace("/img_upload/cms/ck/img","")
-                content2 = content1.replace("data-original","src")
+                content2 = content1.replace("data-original","src").replace("/data/attachment/editor","")
                 r = re.compile("2\d{5}/")
                 r1 = re.compile("\d+/\d+/\d+/\d+/")
+                r2 = re.compile("\d+/\d+/\d+/")
                 content3 = r.sub("",content2)
-                content = r1.sub("",content3)
+                content4 = r1.sub("",content3)
+                content = r2.sub("",content4)
+            else:
+                content = newsContent
             News.objects.create(newsItem=tag, article=content, title=title, author=user, imgs=imgStr)
 
 def main(url):
